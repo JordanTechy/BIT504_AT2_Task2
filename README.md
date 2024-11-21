@@ -15,16 +15,14 @@ This is my todo list i will use to mark off what needs to be done (That i know o
 - GameMain Constructor
 
 
-
-
-  - TODO: This JPanel fires a MouseEvent on MouseClicked so add required event listener to 'this'.
-  - TODO: Create a new instance of the game "Board"class. HINT check the variables above for the correct name
-  - TODO: call the method to initialise the game board
+  ~~ - TODO: This JPanel fires a MouseEvent on MouseClicked so add required event listener to 'this'. - this.addMouseListener(this);~~ 
+ ~~  - TODO: Create a new instance of the game "Board"class. HINT check the variables above for the correct name - board = new Board();~~ 
+  ~~ - TODO: call the method to initialise the game board - initGame();~~ 
 
 - main
 
-  - TODO: create the new GameMain panel and add it to the frame
-  - TODO: set the default close operation of the frame to exit_on_close
+ ~~  - TODO: create the new GameMain panel and add it to the frame = frame.add(new GameMain());~~ 
+ ~~  - TODO: set the default close operation of the frame to exit_on_close - frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);~~ 
 
 - Paint Component
 

@@ -29,8 +29,8 @@ public class GameMain extends JPanel implements MouseListener{
 	private Board board;
 	 	 
 	//DONE: create the enumeration for the variable below (GameState currentState)
-	
 	//HINT all of the states you require are shown in the code within GameMain
+
 	private GameState currentState; 
 	
 	// the current player
@@ -42,8 +42,8 @@ public class GameMain extends JPanel implements MouseListener{
 	/** Constructor to setup the UI and game components on the panel */
 	public GameMain() {   
 		
-		// TODO: This JPanel fires a MouseEvent on MouseClicked so add required event listener to 'this'.          
-	    
+		// DONE: This JPanel fires a MouseEvent on MouseClicked so add required event listener to 'this'.          
+	    this.addMouseListener(this);
 	    
 		// Setup the status bar (JLabel) to display status message       
 		statusBar = new JLabel("         ");       
@@ -59,11 +59,11 @@ public class GameMain extends JPanel implements MouseListener{
 		setPreferredSize(new Dimension(CANVAS_WIDTH, CANVAS_HEIGHT + 30));
 		
 		
-		// TODO: Create a new instance of the game "Board"class. HINT check the variables above for the correct name
-
+		// DONE: Create a new instance of the game "Board"class. HINT check the variables above for the correct name
+		 board = new Board();
 		
-		//TODO: call the method to initialise the game board
-
+		//DONE: call the method to initialise the game board
+		initGame();
 	}
 	
 	public static void main(String[] args) {
@@ -73,13 +73,13 @@ public class GameMain extends JPanel implements MouseListener{
 				//create a main window to contain the panel
 				JFrame frame = new JFrame(TITLE);
 				
-				//TODO: create the new GameMain panel and add it to the frame
+				//DONE: create the new GameMain panel and add it to the frame
 						
 				
-				
-				//TODO: set the default close operation of the frame to exit_on_close
-		            
-				
+				frame.add(new GameMain());
+				//DONE: set the default close operation of the frame to exit_on_close
+				frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
 				frame.pack();             
 				frame.setLocationRelativeTo(null);
 				frame.setVisible(true);
@@ -195,7 +195,7 @@ public class GameMain extends JPanel implements MouseListener{
 	@Override
 	public void mousePressed(MouseEvent e) {
 		//  Auto-generated, event not used
-		
+		System.err.println("Clicked");
 	}
 	@Override
 	public void mouseReleased(MouseEvent e) {
@@ -205,12 +205,13 @@ public class GameMain extends JPanel implements MouseListener{
 	@Override
 	public void mouseEntered(MouseEvent e) {
 		// Auto-generated,event not used
-		
+
 	}
 	@Override
 	public void mouseExited(MouseEvent e) {
 		// Auto-generated, event not used
 		System.out.println();
+	
 	}
 
 }
