@@ -26,17 +26,17 @@ This is my todo list i will use to mark off what needs to be done (That i know o
 
 - Paint Component
 
-  - TODO: use the status bar to display the message "X"'s Turn
-  - TODO: use the status bar to display the message "O"'s Turn
+  ~~ - TODO: use the status bar to display the message "X"'s Turn~~ 
+  ~~ - TODO: use the status bar to display the message "O"'s Turn~~ 
 
 - updateGame
 
-  - TODO: check which player has won and update the currentstate to the appropriate gamestate for the winner
-  - TODO: set the currentstate to the draw gamestate
+  ~~- TODO: check which player has won and update the currentstate to the appropriate gamestate for the winner~~
+  ~~- TODO: set the currentstate to the draw gamestate~~
 
 - mouseClicked
 
-  - TODO: redraw the graphics on the UI
+  ~~-- TODO: redraw the graphics on the UI~~-
 
 
                                  Cell
@@ -54,7 +54,7 @@ This is my todo list i will use to mark off what needs to be done (That i know o
                                 Board
 
 - Constructor 
-    - TODO: initialise the cells array using ROWS and COLS constants 
+   ~~- - TODO: initialise the cells array using ROWS and COLS constants ~~
     - TODO: Check whether the game has ended in a draw.
 
 - hasWon 
