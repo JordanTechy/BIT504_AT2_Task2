@@ -27,9 +27,24 @@ public class Board {
 
 	/** Return true if it is a draw (i.e., no more EMPTY cells) */
 	public boolean isDraw() {
-		return false;
+		// DONE: Check whether the game has ended in a draw.
+		
+		// set isDraw to true and then loop over the rows,cols and as long
+		// as there are empty rows  then it will be set to false become false .
+		boolean isDraw = true;
 
-		// TODO: Check whether the game has ended in a draw.
+		// Because isDraw is set to true 
+		// loow over the rows and cols 
+		for (int row = 0; row < GameMain.ROWS; ++row) {
+			for (int col = 0; col < GameMain.COLS; ++col) {
+				// System.out.println(cells[row][col].content);
+				if (cells[row][col].content == Player.Empty) {
+					// if there are any empty cels then set is draw to false
+					isDraw=false;
+				} 
+			}
+		}
+		return isDraw;
 
 		// Hint: Use a nested loop (see the constructor for an example). Check whether
 		// any of the cells content in the board grid are Player.Empty. If they are, it
