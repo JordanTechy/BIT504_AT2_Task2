@@ -184,8 +184,7 @@ public class GameMain extends JPanel implements MouseListener {
 					&& board.cells[rowSelected][colSelected].content == Player.Empty) {
 				// move
 				board.cells[rowSelected][colSelected].content = currentPlayer;
-				System.err.println("Row is : " + rowSelected);
-				System.err.println("Col is : " + colSelected);
+			
 
 				// update currentState
 				updateGame(currentPlayer, rowSelected, colSelected);

@@ -43,12 +43,10 @@ This is my todo list i will use to mark off what needs to be done (That i know o
 
   - Constructor
 
-    - TODO: Initialise the variables row, col
-    - TODO: call the method that sets the cell content to EMPTY
+    ~~- TODO: Initialise the variables row, col~~
+  ~~  - TODO: call the method that sets the cell content to EMPTY~~
 
-- clear
 
-- Set the Value of content to empty
 
 
                                 Board
