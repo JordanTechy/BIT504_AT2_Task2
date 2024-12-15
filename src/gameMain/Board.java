@@ -60,9 +60,9 @@ public class Board {
 	public boolean hasWon(Player thePlayer, int playerRow, int playerCol) {
 		// check if player has 3-in-that-row
 
-		System.err.println("Player is : " + thePlayer);
-		System.err.println("Row is : " + playerRow);
-		System.err.println("Col is : " + playerCol);
+		// System.out.println("Player is : " + thePlayer);
+		// System.out.println("Row is : " + playerRow);
+		// System.out.println("Col is : " + playerCol);
 
 		if (cells[playerRow][0].content == thePlayer && cells[playerRow][1].content == thePlayer
 				&& cells[playerRow][2].content == thePlayer)
