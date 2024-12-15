@@ -108,7 +108,6 @@ public class GameMain extends JPanel implements MouseListener {
 
 			}
 
-			System.out.println(currentState);
 
 		} else if (currentState == GameState.Draw) {
 			statusBar.setForeground(Color.black);
