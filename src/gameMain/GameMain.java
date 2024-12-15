@@ -107,14 +107,17 @@ public class GameMain extends JPanel implements MouseListener {
 				statusBar.setText("O's Turn");
 
 			}
+
+			System.out.println(currentState);
+
 		} else if (currentState == GameState.Draw) {
-			statusBar.setForeground(Color.RED);
+			statusBar.setForeground(Color.black);
 			statusBar.setText("It's a Draw! Click to play again.");
 		} else if (currentState == GameState.Cross_won) {
 			statusBar.setForeground(Color.RED);
 			statusBar.setText("'X' Won! Click to play again.");
 		} else if (currentState == GameState.Nought_won) {
-			statusBar.setForeground(Color.RED);
+			statusBar.setForeground(Color.BLUE);
 			statusBar.setText("'O' Won! Click to play again.");
 		}
 	}
@@ -226,7 +229,7 @@ public class GameMain extends JPanel implements MouseListener {
 	@Override
 	public void mouseExited(MouseEvent e) {
 		// Auto-generated, event not used
-		System.out.println();
+		//System.out.println();
 
 	}
 
