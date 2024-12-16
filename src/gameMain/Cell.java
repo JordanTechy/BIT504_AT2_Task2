@@ -9,7 +9,8 @@ public class Cell {
 	// content of this cell (empty, cross, nought)
 	Player content;
 	// row and column of this cell
-	int row, col;
+	int row; 
+	int col;
 
 	/** Constructor to initialise this cell with the specified row and col */
 	public Cell(int row, int col) {
